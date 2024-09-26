@@ -24,11 +24,22 @@ def pop() :
         del array[top]
         top -= 1
         return array[top+1]
+
     else:
         print("stack underflow")
         exit()
 
+def peek() :
+    if not isEmpty() :      #공백 상태가 아닌 경우
+        return array[top]
+    else : pass
+
+def size(): return top+1
+
 push(5)
 push(6)
 pop()
+
 print(array)
+print(peek())
+print(top)
