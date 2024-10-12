@@ -1,4 +1,4 @@
-from ch02_ArrayQueue import ArrayQueue
+from ArrayQueue import ArrayQueue
 
 class CircularDeque(ArrayQueue):
     def __init__(self, capacity=10): #생성자는 상속되지 않으므로 다시 구현
